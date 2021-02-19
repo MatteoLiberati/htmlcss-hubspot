@@ -75,7 +75,7 @@ body{
 /* -HEADER-TOP */
 
 header .header-top{
-    background-color: #F6F9FD;
+    background-color: #f4f9fd;
     line-height: 85px;
     border-bottom: 1px solid #000;
 }
@@ -83,6 +83,10 @@ header .header-top{
 header a{
     text-decoration: none;
     color: black;
+}
+
+header i.fa-chevron-down{
+    vertical-align: text-bottom;
 }
 
 /* --HEADER-TOP-LEFT */
@@ -94,16 +98,35 @@ header .header-top-left > span{
 
 header .header-top-right i.fa-search{
     color: #03a6be;
-    vertical-align: middle;
+    vertical-align:middle;
 }
 
 header .header-top-right a{
     margin-left: 22px;
 }
 
-
 /* -HEADER-BOTTOM */
 
+header .header-bottom{
+    line-height: 85px;
+}
+
+/* --HEADER BOTTOM LEFT */
+.header-bottom-left img{
+    vertical-align: middle;
+}
+
+
+/* --HEADER BOTTOM RIGHT */
+.header-bottom-right ul li{
+   display: inline-block;
+   list-style:none;
+   margin-left: 20px;
+}
+
+.header-bottom-right ul li i{
+    margin-left: 10px;
+}
 /* MAIN */
 
 /* -JUMBOTRON */
