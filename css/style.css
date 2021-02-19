@@ -1,6 +1,58 @@
+/* GENERAL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: red;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* UTILIES */
+.container{
+    width: 1270px;
+    margin: auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left{
+    float: left;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+/* HEADER */
+
+/* -HEADER-TOP */
+
+/* -HEADER-BOTTOM */
+
+/* MAIN */
+
+/* -JUMBOTRON */
+
+/* -CONTENT CONTAINER SECTION */
+
+/* --BETTER TOGETHER SECTION */
+
+/* --FREE CRM */
+
+/* --FREE COLUMNS */
+
+/* -TABLE SECTION */
+
+/* -REGISTRATION SECTION */
+
+/* FOOTER */
