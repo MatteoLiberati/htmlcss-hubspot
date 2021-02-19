@@ -170,8 +170,8 @@ header .header-bottom{
     background-image: url("../img/jumbotron.png");
     background-color: #fff5ef;
     background-repeat: no-repeat;
-    background-size: 83%;
-    background-position: right;
+    background-size: 73%;
+    background-position: right top;
 }
 
 .jumbotron .text-jumbotron h1{
@@ -207,10 +207,10 @@ header .header-bottom{
 }
 /* --FREE CRM SECTION */
 .main-content > .free-crm{
-    width: 60%;
-    margin: auto;
+    /* width: 60%;
+    margin: auto; */
     background-color: white;
-    padding: 60px;
+    padding: 80px 100px;
     margin-top: 50px;
 }
 
@@ -220,7 +220,7 @@ header .header-bottom{
 }
 
 .main-content .free-crm .crm-left img{
-    width: 48%;
+    width: 52%;
     margin-bottom: 20px;
 }
 
@@ -249,8 +249,20 @@ header .header-bottom{
     margin-right: 20px;
 }
 
-/* --FREE COLUMNS */
+/* --CRM COLUMNS SECTION*/
+.crm-columns{
+    margin-top: 50px
+}
 
+.crm-columns >div{
+    width: 30%;
+    min-height: 700px;
+    background-color: white;
+}
+
+.crm-columns div:nth-child(2){
+    margin: 0 5%;
+}
 /* -TABLE SECTION */
 
 /* -REGISTRATION SECTION */
