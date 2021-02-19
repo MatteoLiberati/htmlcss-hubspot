@@ -11,6 +11,18 @@ body{
     color: #4E5A6A;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    line-height: 30px;
+}
 /* UTILIES */
 
 .container{
@@ -44,11 +56,12 @@ body{
     text-align: right;
 }
 
-.mt-20{
-    margin-top: 20px;
+/* NON UTILIZZATO */
+.mt-30{
+    margin-top: 30px;
 }
 
-.mb-20{
+.mb-30{
     margin-bottom: 20px;
 }
 
@@ -78,11 +91,6 @@ header .header-top{
     background-color: #f4f9fd;
     line-height: 85px;
     border-bottom: 1px solid #000;
-}
-
-header a{
-    text-decoration: none;
-    color: black;
 }
 
 header i.fa-chevron-down{
@@ -116,7 +124,6 @@ header .header-bottom{
     vertical-align: middle;
 }
 
-
 /* --HEADER BOTTOM RIGHT */
 .header-bottom-right ul li{
    display: inline-block;
@@ -128,13 +135,50 @@ header .header-bottom{
     margin-left: 10px;
 }
 /* MAIN */
-
 /* -JUMBOTRON */
+.jumbotron{
+    height: 590px;
+    background-image: url("../img/jumbotron.png");
+    background-color: #fff5ef;
+    background-repeat: no-repeat;
+    background-size: 83%;
+    background-position: right;
+}
 
-/* -CONTENT CONTAINER SECTION */
+.jumbotron .text-jumbotron h1{
+    padding-top: 60px;
+    font-size: 50px;
+}
 
+.jumbotron .btn{
+    padding: 20px 40px;
+}
+
+.jumbotron .text-jumbotron div:last-child{
+    font-size: 14px;
+}
+
+/* -COLORED BORDER */
+.colored-border{
+    height: 89px;
+    background-color: #afebe4;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/* -MAIN-CONTENT*/
 /* --BETTER TOGETHER SECTION */
+.main-content{
+    margin-top: 50px
+}
 
+.main-content .better-together{
+    margin: auto;
+}
+
+.main-content .better-together > img{
+    width: 250px;
+}
 /* --FREE CRM */
 
 /* --FREE COLUMNS */
