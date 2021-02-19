@@ -1,4 +1,5 @@
 /* GENERAL */
+
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +8,22 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    color: #4E5A6A;
 }
 
 /* UTILIES */
+
 .container{
     width: 1270px;
     margin: auto;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.h-container{
+    height: 100%;
 }
 
 .clearfix::after{
@@ -25,6 +36,14 @@ body{
     float: left;
 }
 
+.align-center{
+    text-align: center;
+}
+
+.align-right{
+    text-align: right;
+}
+
 .mt-20{
     margin-top: 20px;
 }
@@ -33,9 +52,55 @@ body{
     margin-bottom: 20px;
 }
 
-/* HEADER */
+.btn{
+    display: inline-block;
+    min-width: 60px;
+    line-height: 1;
+    text-align: center;
+    padding: 12px 10px;
+    font-size: 15px;
+    background-color: #fe775a;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
 
+.btn-white{
+    background-color: transparent;
+    color: #fe775a;
+    border-color: #fe775a;
+}
+
+/* HEADER */
 /* -HEADER-TOP */
+
+header .header-top{
+    background-color: #F6F9FD;
+    line-height: 85px;
+    border-bottom: 1px solid #000;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+/* --HEADER-TOP-LEFT */
+
+header .header-top-left > span{
+    margin: 0 15px;
+}
+/* --HEADER-TOP-RIGHT */
+
+header .header-top-right i.fa-search{
+    color: #03a6be;
+    vertical-align: middle;
+}
+
+header .header-top-right a{
+    margin-left: 22px;
+}
+
 
 /* -HEADER-BOTTOM */
 
