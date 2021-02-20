@@ -164,6 +164,10 @@ header .header-bottom{
     margin-left: 10px;
 }
 /* MAIN */
+main{
+    background-color: #f4f9fd;
+}
+
 /* -JUMBOTRON */
 .jumbotron{
     height: 590px;
@@ -191,41 +195,38 @@ header .header-bottom{
     border-bottom: 3px solid black;
 }
 
-/* -MAIN-CONTENT*/
-/* --BETTER TOGETHER SECTION */
-.main-content{
-    background-color: #f4f9fd;
+/* -CONTAINER OF BLOCKS SECTION*/
+.container-of-bloks{
     padding-top: 50px
 }
 
-.main-content .better-together{
+/* --BETTER TOGETHER SECTION */
+.container-of-bloks .better-together{
     margin: auto;
 }
 
-.main-content .better-together > img{
+.container-of-bloks .better-together > img{
     width: 250px;
 }
 /* --FREE CRM SECTION */
-.main-content > .free-crm{
-    /* width: 60%;
-    margin: auto; */
+.container-of-bloks > .free-crm{
     background-color: white;
     padding: 80px 100px;
     margin-top: 50px;
 }
 
 /* ---CRM LEFT */
-.main-content .free-crm .crm-left{
+.container-of-bloks .free-crm .crm-left{
     width: 30%;
 }
 
-.main-content .free-crm .crm-left img{
+.container-of-bloks .free-crm .crm-left img{
     width: 52%;
     margin-bottom: 20px;
 }
 
 /* ---CRM-RIGHT */
-.main-content .free-crm .crm-right{
+.container-of-bloks .free-crm .crm-right{
     width: 70%;
 }
 
@@ -244,7 +245,7 @@ header .header-bottom{
     padding-right: 50px;
 }
 
-.main-content .free-crm .crm-right li{
+.container-of-bloks .free-crm .crm-right li{
     display: inline-block;
     margin-right: 20px;
 }
@@ -280,6 +281,53 @@ header .header-bottom{
     text-align: left;
 }
 /* -TABLE SECTION */
+main section.table{
+    margin-top: 50px;
+    padding: 50px 0px 90px;
+    color: white;
+    background-image: linear-gradient(to right, #00a5bc, #00bca6);
+}
+
+section.table h2{
+    font-size: 33px;
+}
+
+section.table p{
+    font-size:15px;
+}
+
+section.table .row .float-left{
+    width: 25%;
+    max-height: 200px;
+    min-height: 200px;
+    padding: 20px 0px;
+    overflow: auto;
+}
+
+section.table .row img{
+    max-width: 130px;
+}
+
+.table-numbers{
+    margin: 20px 0px;
+    font-size: 40px;
+}
+
+.table-numbers span{
+    font-weight: bold;
+}
+
+.table .row .float-left > span{
+    font-size: 13px;
+}
+
+.table .container .row:last-child{
+    border-top: 1px solid white;
+}
+
+.table .container .float-left:not(:last-child){
+    border-right: 1px solid white;
+}
 
 /* -REGISTRATION SECTION */
 
