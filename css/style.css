@@ -164,10 +164,6 @@ header .header-bottom{
     margin-left: 10px;
 }
 /* MAIN */
-main{
-    background-color: #f4f9fd;
-}
-
 /* -JUMBOTRON */
 .jumbotron{
     height: 590px;
@@ -197,6 +193,7 @@ main{
 
 /* -CONTAINER OF BLOCKS SECTION*/
 .container-of-bloks{
+    background-color: #f4f9fd;
     padding-top: 50px
 }
 
@@ -330,5 +327,54 @@ section.table .row img{
 }
 
 /* -REGISTRATION SECTION */
+
+.registration .costumers-number{
+    width: 40%;
+    padding: 50px 180px 0px 80px;
+}
+
+.registration .costumers-number > span{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.registration .costumers-brands{
+    width: 60%;
+    padding: 50px 10px;
+}
+
+.registration .costumers-brands .float-left{
+    position: relative;
+    width: 25%;
+    height: 70px;
+}
+
+
+.registration .costumers-brands img{
+    max-width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.registration .costumers-brands img[alt="Classpass"]{
+    width: 120px;
+    left: 40%;
+}
+
+.registration .container .subscribe{
+    width: 40%;
+    height: 100px;
+    border: 1px solid #000;
+}
+
+.registration .container figure{
+    width: 60%;
+    text-align: right;
+}
+
+.registration .container img{
+    width: 350px;
 
 /* FOOTER */
