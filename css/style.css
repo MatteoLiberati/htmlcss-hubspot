@@ -340,7 +340,7 @@ section.table .row img{
 
 .registration .costumers-brands{
     width: 60%;
-    padding: 50px 10px;
+    padding: 50px 70px 50px 0px;
 }
 
 .registration .costumers-brands .float-left{
@@ -348,7 +348,6 @@ section.table .row img{
     width: 25%;
     height: 70px;
 }
-
 
 .registration .costumers-brands img{
     max-width: 140px;
@@ -363,18 +362,32 @@ section.table .row img{
     left: 40%;
 }
 
+/* --SUBSCRIVE */
 .registration .container .subscribe{
-    width: 40%;
-    height: 100px;
-    border: 1px solid #000;
+    width: 45%;
 }
 
+.registration .subscribe h2{
+    font-size: 37px;
+    margin-top: 80px;
+}
+
+.registration .subscribe div:last-child{
+    font-size: 15px;
+}
+
+/* --FIGURE */
 .registration .container figure{
-    width: 60%;
+    width: 55%;
     text-align: right;
 }
 
 .registration .container img{
     width: 350px;
-
+}
 /* FOOTER */
+footer{
+    background-color: #32495b;
+    color: white;
+    height: 500px;
+}
