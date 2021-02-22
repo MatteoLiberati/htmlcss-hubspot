@@ -40,6 +40,7 @@ li{
     color: #fe775a;
     margin-right: 10px;
 }
+
 /* UTILIES */
 
 .container{
@@ -77,7 +78,6 @@ li{
     text-align: right;
 }
 
-/* NON UTILIZZATO */
 .mt-30{
     margin-top: 30px;
 }
@@ -97,12 +97,24 @@ li{
     color: white;
     border: 1px solid transparent;
     border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background-color: #d45d42;
 }
 
 .btn-white{
     background-color: transparent;
     color: #fe775a;
     border-color: #fe775a;
+}
+
+.btn-white:hover{
+    background-color: rgba(75, 71, 71, 0.445);
+    color: white;
+    border: 1px solid rgba(75, 71, 71, 0.445);
 }
 
 .btn-big{
@@ -116,7 +128,6 @@ li{
 
 /* HEADER */
 /* -HEADER-TOP */
-
 header .header-top{
     background-color: #f4f9fd;
     line-height: 85px;
@@ -128,12 +139,37 @@ header i.fa-chevron-down{
 }
 
 /* --HEADER-TOP-LEFT */
-
 header .header-top-left > span{
     margin: 0 15px;
 }
-/* --HEADER-TOP-RIGHT */
+.header-top-left .languages{
+    display: inline-block;
+}
 
+header .header-top-left .subnav{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:rgb(112, 107, 107);
+    width: 100%;
+    z-index: 1;
+}
+
+header .header-top-left .languages:hover .subnav{
+    display: block;
+}
+
+header .header-top-left .subnav li{
+    color: white;
+    line-height: 40px;
+    padding: 5px;
+}
+
+.subnav li:hover{
+    background-color:  #fe775a;
+}
+
+/* --HEADER-TOP-RIGHT */
 header .header-top-right i.fa-search{
     color: #03a6be;
     vertical-align:middle;
@@ -144,7 +180,6 @@ header .header-top-right a{
 }
 
 /* -HEADER-BOTTOM */
-
 header .header-bottom{
     line-height: 85px;
 }
@@ -154,7 +189,7 @@ header .header-bottom{
     vertical-align: middle;
 }
 
-/* --HEADER BOTTOM RIGHT */
+/* --HEADER BOTTOM 100%IGHT */
 .header-bottom-right ul li{
    display: inline-block;
    margin-left: 20px;
@@ -163,15 +198,51 @@ header .header-bottom{
 .header-bottom-right ul li i{
     margin-left: 10px;
 }
+
+.header-bottom-right .subnav{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:rgb(112, 107, 107);
+    width: 100%;
+    z-index: 1;
+}
+
+.header-bottom-right .subnav a{
+    display: block;
+    padding-left: 5px;
+    line-height: 35px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.header-bottom-right .subnav li{
+    margin-left: 0;
+    color: white;
+}
+
+li.relative:hover .subnav{
+  display: block;
+}
+
+li.relative:hover,
+.header-bottom-right .subnav a:hover{
+    background-color: #fe775a;
+}
+
+li.relative:hover a{
+    color: white;
+}
+
 /* MAIN */
 /* -JUMBOTRON */
 .jumbotron{
-    height: 590px;
+    height: 600px;
     background-image: url("../img/jumbotron.png");
     background-color: #fff5ef;
     background-repeat: no-repeat;
-    background-size: 73%;
-    background-position: right top;
+    background-position: calc(50% + 240px) top;
+    background-origin: border-box;
 }
 
 .jumbotron .text-jumbotron h1{
@@ -431,6 +502,10 @@ footer .container .col .social i{
     margin-right: 22px;
 }
 
+footer .container .col li:hover{
+    color: dodgerblue;
+}
+
 /* -LANGUAGES */
 footer .languages{
     margin-top: 80px;
@@ -439,6 +514,10 @@ footer .languages{
 footer .languages li{
     display: inline-block;
     margin-right: 20px;
+}
+
+footer .languages li:hover{
+    color: #fe775a;
 }
 
 footer .languages hr{
@@ -458,3 +537,7 @@ footer .clearfix .privacy li{
     margin-left: 20px;
     font-size: 17px;
 }
+
+/* MENU A TENDINA */
+/* HELP */
+/* HEADER FIXED */
