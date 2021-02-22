@@ -389,13 +389,17 @@ section.table .row img{
 footer{
     background-color: #32495b;
     color: white;
-    height: 500px;
+}
+
+footer a{
+    color: #dadee0;
 }
 
 footer .container{
     padding: 40px 0px;
 }
 
+/* -COLUMNS */
 footer .container .col{
     float: left;
     width: 25%;
@@ -404,10 +408,7 @@ footer .container .col{
 
 footer .container .col h5{
     font-size: 17px;
-}
-
-footer .container .col a{
-    color: #dadee0;
+    color: white;
 }
 
 footer .container .col li{
@@ -421,3 +422,39 @@ footer .container .col .btn{
     font-weight: 600;
 }
 
+footer .container .col .social{
+    margin-top: 18px;
+}
+
+footer .container .col .social i{
+    font-size: 18px;
+    margin-right: 22px;
+}
+
+/* -LANGUAGES */
+footer .languages{
+    margin-top: 80px;
+}
+
+footer .languages li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer .languages hr{
+    border-color: #dadee0;
+    margin-bottom: 40px;
+}
+
+/* -COPYRIGHT AND PRIVACY */
+/* --COPYRIGHT */
+footer .clearfix .copyright span{   
+    display: block;
+    margin-top: 10px;
+}
+/* --PRIVACY */
+footer .clearfix .privacy li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 17px;
+}
