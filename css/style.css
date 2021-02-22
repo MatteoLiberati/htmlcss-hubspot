@@ -43,7 +43,7 @@ li{
 /* UTILIES */
 
 .container{
-    width: 1270px;
+    width: 1350px;
     margin: auto;
 }
 
@@ -106,7 +106,7 @@ li{
 }
 
 .btn-big{
-    padding: 20px 35px;
+    padding: 25px 40px;
 }
 
 .b-shadow{
@@ -290,7 +290,7 @@ section.table h2{
 }
 
 section.table p{
-    font-size:15px;
+    font-size: 16px;
 }
 
 section.table .row .float-left{
@@ -329,7 +329,7 @@ section.table .row img{
 /* -REGISTRATION SECTION */
 
 .registration .costumers-number{
-    width: 40%;
+    width: 42%;
     padding: 50px 180px 0px 80px;
 }
 
@@ -339,8 +339,8 @@ section.table .row img{
 }
 
 .registration .costumers-brands{
-    width: 60%;
-    padding: 50px 70px 50px 0px;
+    width: 58%;
+    padding: 50px 40px 50px 0px;
 }
 
 .registration .costumers-brands .float-left{
@@ -350,7 +350,7 @@ section.table .row img{
 }
 
 .registration .costumers-brands img{
-    max-width: 140px;
+    max-width: 160px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -364,7 +364,7 @@ section.table .row img{
 
 /* --SUBSCRIVE */
 .registration .container .subscribe{
-    width: 45%;
+    width: 42%;
 }
 
 .registration .subscribe h2{
@@ -378,7 +378,7 @@ section.table .row img{
 
 /* --FIGURE */
 .registration .container figure{
-    width: 55%;
+    width: 58%;
     text-align: right;
 }
 
@@ -391,3 +391,33 @@ footer{
     color: white;
     height: 500px;
 }
+
+footer .container{
+    padding: 40px 0px;
+}
+
+footer .container .col{
+    float: left;
+    width: 25%;
+    padding-right: 30px;
+}
+
+footer .container .col h5{
+    font-size: 17px;
+}
+
+footer .container .col a{
+    color: #dadee0;
+}
+
+footer .container .col li{
+    margin-bottom: 18px;
+}
+
+footer .container .col .btn{
+    background-color: #dadee0;
+    color: #32495b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
