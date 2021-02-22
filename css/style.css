@@ -514,10 +514,13 @@ footer .languages{
 footer .languages li{
     display: inline-block;
     margin-right: 20px;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
 }
 
 footer .languages li:hover{
     color: #fe775a;
+    border-color: #fe775a;
 }
 
 footer .languages hr{
@@ -538,6 +541,20 @@ footer .clearfix .privacy li{
     font-size: 17px;
 }
 
-/* MENU A TENDINA */
-/* HELP */
-/* HEADER FIXED */
+/* HELP BUTTON */
+.help{
+    position: fixed;
+    bottom: 5px;
+    right: calc(50% - 800px);
+    z-index: 10;
+}
+
+.help i{
+    color: #fe775a;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.help:hover i{
+    transform: scale(1.2);
+}
