@@ -86,6 +86,11 @@ li{
     margin-bottom: 20px;
 }
 
+.b-shadow{
+    box-shadow: 0px 1px 3px #888888;
+    border-radius: 2px;
+}
+
 .btn{
     display: inline-block;
     min-width: 60px;
@@ -100,30 +105,25 @@ li{
     transition-duration: 0.4s;
 }
 
-.btn:hover{
-    transform: scale(1.1);
-    background-color: #d45d42;
-}
-
 .btn-white{
     background-color: transparent;
     color: #fe775a;
     border-color: #fe775a;
 }
 
-.btn-white:hover{
-    background-color: rgba(75, 71, 71, 0.445);
-    color: white;
-    border: 1px solid rgba(75, 71, 71, 0.445);
-}
-
 .btn-big{
     padding: 25px 40px;
 }
 
-.b-shadow{
-    box-shadow: 0px 1px 3px #888888;
-    border-radius: 2px;
+.btn:hover{
+    transform: scale(1.1);
+    background-color: #d45d42;
+}
+
+.btn-white:hover{
+    background-color: rgba(75, 71, 71, 0.445);
+    color: white;
+    border: 1px solid rgba(75, 71, 71, 0.445);
 }
 
 /* HEADER */
@@ -145,6 +145,7 @@ header i.fa-chevron-down{
 .header-top-left .languages{
     display: inline-block;
 }
+
 /* ---SUBNAV LANGUAGES */
 .header-top-left .subnav{
     display: none;
@@ -277,6 +278,7 @@ li.relative:hover .subnav{
 .container-of-bloks .better-together > img{
     width: 250px;
 }
+
 /* --FREE CRM SECTION */
 .container-of-bloks > .free-crm{
     background-color: white;
@@ -349,6 +351,7 @@ li.relative:hover .subnav{
 .crm-columns div ul li{
     text-align: left;
 }
+
 /* -TABLE SECTION */
 main section.table{
     margin-top: 50px;
@@ -399,7 +402,6 @@ section.table .row img{
 }
 
 /* -REGISTRATION SECTION */
-
 .registration .costumers-number{
     width: 42%;
     padding: 50px 180px 0px 80px;
@@ -457,6 +459,7 @@ section.table .row img{
 .registration .container img{
     width: 350px;
 }
+
 /* FOOTER */
 footer{
     background-color: #32495b;
@@ -535,6 +538,7 @@ footer .clearfix .copyright span{
     display: block;
     margin-top: 10px;
 }
+
 /* --PRIVACY */
 footer .clearfix .privacy li{
     display: inline-block;
