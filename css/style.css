@@ -128,7 +128,7 @@ li{
 
 /* HEADER */
 /* -HEADER-TOP */
-header .header-top{
+.header-top{
     background-color: #f4f9fd;
     line-height: 85px;
     border-bottom: 1px solid #000;
@@ -139,14 +139,14 @@ header i.fa-chevron-down{
 }
 
 /* --HEADER-TOP-LEFT */
-header .header-top-left > span{
+.header-top-left > span{
     margin: 0 15px;
 }
 .header-top-left .languages{
     display: inline-block;
 }
-
-header .header-top-left .subnav{
+/* ---SUBNAV LANGUAGES */
+.header-top-left .subnav{
     display: none;
     position: absolute;
     left: 0;
@@ -155,11 +155,11 @@ header .header-top-left .subnav{
     z-index: 1;
 }
 
-header .header-top-left .languages:hover .subnav{
+.header-top-left .languages:hover .subnav{
     display: block;
 }
 
-header .header-top-left .subnav li{
+.header-top-left .subnav li{
     color: white;
     line-height: 40px;
     padding: 5px;
@@ -170,18 +170,22 @@ header .header-top-left .subnav li{
 }
 
 /* --HEADER-TOP-RIGHT */
-header .header-top-right i.fa-search{
+.header-top-right i.fa-search{
     color: #03a6be;
     vertical-align:middle;
 }
 
-header .header-top-right a{
+.header-top-right a{
     margin-left: 22px;
 }
 
 /* -HEADER-BOTTOM */
-header .header-bottom{
+.header-bottom{
     line-height: 85px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgb(216, 208, 208);
 }
 
 /* --HEADER BOTTOM LEFT */
@@ -189,7 +193,7 @@ header .header-bottom{
     vertical-align: middle;
 }
 
-/* --HEADER BOTTOM 100%IGHT */
+/* --HEADER BOTTOM RIGHT */
 .header-bottom-right ul li{
    display: inline-block;
    margin-left: 20px;
@@ -199,6 +203,7 @@ header .header-bottom{
     margin-left: 10px;
 }
 
+/* ---SUBNAVS-HEADER-BOTTOM */
 .header-bottom-right .subnav{
     display: none;
     position: absolute;
@@ -211,7 +216,7 @@ header .header-bottom{
 .header-bottom-right .subnav a{
     display: block;
     padding-left: 5px;
-    line-height: 35px;
+    line-height: 50px;
     text-align: left;
     font-size: 13px;
 }
@@ -225,13 +230,8 @@ li.relative:hover .subnav{
   display: block;
 }
 
-li.relative:hover,
 .header-bottom-right .subnav a:hover{
     background-color: #fe775a;
-}
-
-li.relative:hover a{
-    color: white;
 }
 
 /* MAIN */
