@@ -70,6 +70,20 @@ li{
     position: relative;
 }
 
+.absolute-vertical{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.absolute-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .align-center{
     text-align: center;
 }
@@ -199,10 +213,113 @@ header i.fa-chevron-down{
 .header-bottom-right ul li{
    display: inline-block;
    margin-left: 20px;
+   border-bottom: 2px solid transparent;
+}
+
+.header-bottom-right ul li.relative:hover,
+.header-bottom-right ul a li:only-child:hover{
+    border-color: #fe775a;
 }
 
 .header-bottom-right ul li i{
     margin-left: 10px;
+}
+
+.header-bottom-right .software{
+    cursor: pointer;
+}
+
+/* ---SUBNAV-SOFTWARE */
+.drop-subnav-software{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 2px);
+    z-index: 15;
+    text-align: left;
+    cursor: default;
+}
+
+.header-bottom-right li.relative:hover .drop-subnav-software{
+    display: block;
+}
+
+.subnav-software{
+    height: 500px;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 0px 1px 3px #888888;
+    line-height: 1;
+}
+
+.subnav-software a{
+    color: #80a4c1;
+}
+
+/* ----SUBNAV-SOFTWARE-COL-LEFT */
+.subnav-software .col-left{
+    float: left;
+    width: 30%;
+    height: 85%;
+    border-right: 4px solid #f6f8fa;
+}
+
+.subnav-software .col-left h3{
+    padding: 0px 20px;
+    text-align: center;
+}
+
+/* ----SUBNAV-SOFTWARE-ROWTOP */
+.subnav-software .row-top{
+    float: left;
+    width: 70%;
+    height: 20%;
+    left: 20px;
+    border-bottom: 4px solid #f6f8fa;
+}
+
+.subnav-software .content-row-top span{
+   font-size: 12px;
+}
+
+/* ----SUBNAV-SOFTWARE-RECTANGLES */
+.subnav-software .content-rectangle{
+    padding: 0 10px 0 80px;
+}
+
+.subnav-software .rectangle{
+    float: left;
+    width: calc(70% / 2);
+    height: calc(65% / 2);
+}
+
+.subnav-software .content-rectangle > i{
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+    color: #e08061;
+}
+
+.subnav-software .content-rectangle > span{
+    font-size: 14px;
+}
+
+/* ----SUBNAV-SOFTWARE-MARKETPLACE */
+.subnav-software .marketplace{
+    float: left;
+    height: 15%;
+    width: 100%;
+    background-color: #f6f8fa;
+}
+
+.subnav-software .content-marketplace{
+    width: 100%;
+    text-align: center;
+}
+
+.subnav-software .marketplace h4{
+    display: inline-block;
+    margin-right: 5px;
 }
 
 /* ---SUBNAVS-HEADER-BOTTOM */
@@ -210,6 +327,7 @@ header i.fa-chevron-down{
     display: none;
     position: absolute;
     left: 0;
+    top: calc(100% + 2px);
     background-color:rgb(112, 107, 107);
     width: 100%;
     z-index: 1;
@@ -602,4 +720,3 @@ footer .clearfix .privacy li{
 .help:hover .subhelp{
     display: block;
 }
-
