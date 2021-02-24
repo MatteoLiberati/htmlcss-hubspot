@@ -240,6 +240,10 @@ header i.fa-chevron-down{
     cursor: default;
 }
 
+.drop-subnav-software i{
+    vertical-align: middle;
+}
+
 .header-bottom-right li.relative:hover .drop-subnav-software{
     display: block;
 }
@@ -678,7 +682,7 @@ footer .clearfix .privacy li{
     transition-duration: 0.3s;
 }
 
-.help:hover i{
+.help:hover i.fa-info-circle{
     transform: scale(1.2);
 }
 
@@ -687,6 +691,7 @@ footer .clearfix .privacy li{
     display: none;
     width: 200px;
     position: absolute;
+    z-index: 8;
     bottom: 110%;
     left: 50%;
     transform: translate(-50%, 0);
@@ -717,6 +722,99 @@ footer .clearfix .privacy li{
     vertical-align: middle;
 }
 
-.help:hover .subhelp{
+.help:hover .subhelp,
+.help:hover .chat{
     display: block;
+}
+
+/* -CHAT */
+.help .chat{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: calc(100% + 60px);
+    bottom: 0;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0px 1px 3px #888888;
+    border-radius: 10px;
+}
+
+.chat .hubbot i{
+    margin-left: 10px;
+}
+
+.help .chat i{
+    color:black;
+}
+
+.help .chat > div:first-child{
+    background-color: #e4dada;
+    line-height: 60px;
+}
+
+/* --CHATTING */
+.chatting{
+    height: 220px;
+    padding: 5px 5px 5px 50px;
+    border-bottom: 2px solid #e4dada;
+    overflow: auto;
+}
+
+.chatting i{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.chatting > div:not(.choise){
+    margin: 5px;
+    background-color: #e4dada;
+    border-radius: 10px 0px 10px 0px;
+    padding:8px
+}
+
+.chatting .choise div{
+    margin: 5px;
+    border: 1px solid #000;;
+    padding:8px
+}
+
+.chatting .choise div:hover{
+    color: #fe775a;
+    border-color: #fe775a;
+}
+
+/* --INFORMATION-CHAT */
+.chat .information-chat{
+    padding: 10px;
+    font-size: 13px;
+    color: black;
+    background-color: #e4dada;
+}
+
+.information-chat a{
+    color: dodgerblue;
+}
+
+/* --INPUT-CHAT */
+.chat input{
+    width: 70%;
+    height: 30px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #e4dada;
+    border: none;
+}
+
+.chat .fa-share{
+    font-size: 20px;
+    vertical-align: middle;
 }
